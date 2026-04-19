@@ -1,0 +1,146 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="dash.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>📶smis|<span style="font-size: small;">stock inventory Management</span></h1>
+<h1 id="welcomeUser"></h1>
+<button onclick="logout()">[-></button>
+</header>
+
+<section>
+    <aside> 
+        <ul>
+        <li><a href="#" onclick="loadPage('dashboard')">⏹️Dashboard</a></li><br><br><br>
+        <li><a href="#" onclick="loadPage('product')">©️Product</a></li><br><br><br>
+        <li><a href="#" onclick="loadPage('report')">®️Report</a></li><br><br><br>
+        <li><a href="#" onclick="loadPage('setting')">⚙Setting</a></li><br><br><br>
+        </ul>
+    </aside>
+
+    <main>
+      <div id="dashboardPage" class="page">
+
+        <div class="fabrice">            
+          <h1>Dashboard</h1>
+          <p>Overview inventory status</p>
+        </div>
+        
+        <div class="musirikare">
+            <div>
+                <fieldset>
+                    <p>Total product</p>
+                    <h1 id="totalProduct">0</h1>
+                    <p>+12 this month</p>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <p id="inStockText">IN stock</p>
+                    <h1 id="inStock">0</h1>
+                    <p id="inPercent">0%</p>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <p id="outStockText">out stock</p>
+                    <h1 id="outStock">0</h1>
+                    <p id="outPercent">0%</p>
+                </fieldset>
+            </div>
+        </div>
+
+        <h3>Add New Product</h3>
+        <form id="productForm">
+          <input type="text" id="productName" placeholder="Product name" required>
+          <input type="number" id="productId" placeholder="Product ID" required>
+          <input type="number" id="quantity" placeholder="Quantity" required>
+          <input type="number" id="price" placeholder="Price" required>
+          <button type="submit">Add Product</button>
+        </form>
+
+        
+        <table id="dashboardTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Status</th> 
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+      </div>
+      <div id="productPage" class="page" style="display:none;">
+          <h1>Product Page</h1>
+
+          <table id="productTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Status</th> 
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+      </div>
+
+      <div id="reportPage" class="" style="display:none;">
+          <h1>Report Page</h1>
+          <div class="fi" style="justify-content: space-between; display: flex;">
+                   <fieldset>
+                
+    <img src="images/product.jpg" alt="Product Image">
+
+                <p></p>
+            </fieldset>
+        </div>
+         <div>
+            <fieldset>
+                
+    <img src="images/product.jpg" alt="Product Image">
+
+                <p></p>
+            </fieldset>
+        </div>
+         <div>
+            <fieldset>
+                
+    <img src="images/product.jpg" alt="Product Image">
+
+                <p></p>
+            </fieldset>
+        </div>
+         <div>
+            <fieldset>
+                
+    <img src="images/product.jpg" alt="Product Image">
+</div>
+
+      </div>
+
+      <div id="settingPage" class="page" style="display:none;">
+          <h1>help</h1>
+          <p>welicom to stock investory management </p>
+      </div>
+
+    </main>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.musirikare{
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sidebar {
+        display: none; 
+    }
+}
+
+
+@media (min-width: 769px) {
+    .product-card {
+        font-size: 1rem;
+    }
+}
+.dash{
+  background-color: rgb(57, 128, 190);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;}
+
+header{
+  background-color: rgb(57, 128, 190);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+a{
+  padding: 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover{
+  background-color: blue;
+  border-radius: 8px;
+}
+
+
+.ishuri{
+  display: flex;
+  width: 100%;
+  
+}
+
+aside{
+  background-color: black;
+  width: 250px;
+  padding: 20px;
+  margin-left: 0;
+  height:200vh;
+}
+
+
+main{
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+}
+
+
+section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+fieldset{
+  background-color: antiquewhite;
+  width: 250px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;   
+}
+
+fieldset:hover{
+  background-color: rgb(57, 46, 46);
+}
+
+
+.data{
+  height: 50vh;
+  background-color: rgb(205, 235, 225);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+button{
+  border-radius: 7px;
+  padding: 10px 15px;
+  border: none;
+}
+
+button:hover{
+  background-color: green;
+  color: white;
+  transform: translateX(-1px);
+  transition: 0.3s;
+}
+
+input{
+  height: 35px;
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.in-stock{
+    color: green;
+    font-weight: bold;
+}
+
+.out-stock{
+    color: red;
+    font-weight: bold;
+}
+
+.row-in{
+    background-color: #e6ffe6;
+}
+
+.row-out{
+    background-color: #ffe6e6;
+}
+.fi{
+  justify-content: space-between;
+  display: flex;
+}

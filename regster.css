@@ -1,0 +1,48 @@
+body{
+    font-family: Arial;
+    background-color: rgb(108, 108, 188);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 50px;
+}
+
+.fab{
+    background:rgb(212, 210, 228);
+    padding:30px;
+    width:350px;
+    border-radius:10px;
+    box-shadow: 0 0 20px blue;
+    text-align:center;
+    padding-top: 28px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius: 8px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#0b3c5d;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#145374;
+}
+a:hover{
+    color: brown;
+}
+fieldset{
+     background-color: aliceblue;
+    padding: 70px;
+    border-radius: 8px;
+    border:hidden 
+}
+

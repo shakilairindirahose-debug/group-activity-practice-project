@@ -1,0 +1,46 @@
+body{
+    font-family: Arial;
+    background-color: rgb(108, 108, 188);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+.container{
+    background:rgb(22, 12, 163);
+    padding: 50px;
+    width:350px;
+    border-radius:10px;
+    box-shadow: 0 0 20px blue;
+    text-align:center;
+    background: transparent;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius: 8px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#0b3c5d;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#145374;
+}
+fieldset{
+    background-color: aliceblue;
+    padding: 70px;
+    border-radius: 8px;
+    border:hidden ;
+    
+}
